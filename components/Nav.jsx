@@ -1,12 +1,12 @@
 'use client'
+// converted to jsx for deployment
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import Image from "next/image";
-// import { Navbar } from `flowbite-react`;
 
-let res: any = null
+// let res: any = null
 
 export default function Nav() {
     const { data: session } = useSession();
