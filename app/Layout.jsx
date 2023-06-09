@@ -1,4 +1,3 @@
-import { LayoutProps } from '@.next/types/app/layout';
 import '@styles/globals.css'
 
 import Nav from '@components/Nav';
@@ -9,16 +8,13 @@ export const metadata = {
     description: 'Write down and share your thoughts in the moment'
 }
 
-export interface LayoutPropsOptionalProvider extends LayoutProps {
-    Provider?: React.ReactNode;
-    session?: any
-}
 
-export default function Layout({ children, Provider: OptionalProvider, session }: LayoutPropsOptionalProvider) {
+
+export default function Layout({ children } ) {
     return (
         <html lang='en'>
             <body>
-                <Provider session={session}>
+                <Provider>
 
                     {/* Main part of my application */}
                     <main className='main'>
