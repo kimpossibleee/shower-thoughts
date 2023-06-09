@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.main {
+  @apply mb-11
+}
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+
+
+.prompt_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+
+/* Form Component */
+form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+
+
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/5 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+
+/* ------------------------------- */
+
+.post_textarea {
+  @apply border w-full flex rounded-lg h-[200px] mt-2 p-3 mb-4 text-lg text-gray-500 outline-0;
+}
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.dropdown {
+  @apply border absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+.my_button {
+  @apply border border-pink-700 bg-pink-700 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-pink-700 text-center text-sm font-inter flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-16 text-5xl font-extrabold leading-[1.15] sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+.description {
+  @apply mt-8 mb-14 text-2xl text-gray-600 sm:text-xl max-w-4xl antialiased;
+}
+
+._card {
+  @apply max-w-sm h-80 p-6 bg-white border border-gray-200 rounded-lg shadow;
+}
+
+.card_desc{
+  @apply font-normal text-sm text-gray-700 dark:text-gray-400
+}
+
+.card_info{
+  @apply flex
+}
