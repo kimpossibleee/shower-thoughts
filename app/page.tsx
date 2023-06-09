@@ -1,7 +1,5 @@
 import Feed from "@components/Feed"
-import Image from "next/image"
 import Banner from "@components/Banner"
-import styles from './styles.module.css'
 
 
 export default function Home() {

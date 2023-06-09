@@ -5,14 +5,28 @@ import {useState, useEffect} from 'react'
 
 import Card from './Card'
 
-const CardList = ({ data, handleTagClick }) =>{
+interface Post {
+  post: string;
+  _id: any
+  user: {
+    username: string;
+    email: string;
+  };
+}
+
+interface CardListProps {
+  data: Post[];
+}
+
+
+
+const CardList = ({ data }: CardListProps) =>{
   return (
     <div className='flex gap-5'>
       {data.map((post) => (
         <Card
           key={post._id}
           post={post}
-          handleTagClick={handleTagClick}
         />
       ))}
     </div>
@@ -42,7 +56,6 @@ export default function Feed () {
   <section>
     <CardList
     data={posts}
-    handleTagClick={() => {}}
     />
 
 

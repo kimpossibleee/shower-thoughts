@@ -1,6 +1,14 @@
 'use client'
 
-export default function Card({ post }) {
+interface Post {
+  post: string;
+  user: {
+    username: string;
+    email: string;
+  };
+}
+
+export default function Card({ post }: { post: Post }) {
   return (
     <section>
       <div className='_card'>
