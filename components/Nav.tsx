@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import Image from "next/image";
 
-// let res: any = null
+let res: any = null
 
 export default function Nav() {
     const { data: session } = useSession();

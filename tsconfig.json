@@ -35,9 +35,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/api/auth/[...nextauth]/route.js",
-    "components/Nav.jsx",
-    "app/jotidea/page.jsx",
-    "app/Layout.jsx"
+    "components/Nav.tsx",
+    "app/jotidea/page.tsx",
+    "app/Layout.tsx"
   ],
   "exclude": [
     "node_modules"
