@@ -8,7 +8,7 @@ export default function Home() {
             <Banner />
             {/* INTRODUCTION SECTION */}
             <h2 className='head_text text-center'>
-                <span className='block mt-8'>
+                <span className='block mt-8 mb-3'>
                     Share Your Brilliant, Quirky Ideas with the Global Community!
                 </span>
             </h2>
