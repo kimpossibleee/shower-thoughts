@@ -8,12 +8,10 @@ export const metadata = {
     description: 'Write down and share your thoughts in the moment'
 }
 
-
-
 export default function Layout({ children } ) {
     return (
         <html lang='en'>
-            <body>
+            <body className='bg-gradient-to-r from-cyan-50 to-blue-200'>
                 <Provider>
 
                     {/* Main part of my application */}
